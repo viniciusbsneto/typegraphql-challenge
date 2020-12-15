@@ -9,6 +9,7 @@
   "dependencies": {
     "apollo-server": "^2.19.0",
     "class-validator": "^0.12.2",
+    "dotenv": "^8.2.0",
     "graphql": "^15.4.0",
     "mongoose": "^5.11.8",
     "reflect-metadata": "^0.1.13",
