@@ -19,7 +19,7 @@ class RecipeResolver {
 
   @Query(() => [Recipe])
   async recipes(@Args() { skip, take }: RecipesArgs) {
-    return RecipeSchema.find({ skip, take }).exec();
+    return RecipeSchema.find().limit(take).skip(skip).exec();
   }
 
   @Mutation(() => Recipe)
